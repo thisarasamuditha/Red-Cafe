@@ -1,0 +1,96 @@
+.signup {
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url("/public/banner-bg1.jpg") no-repeat center center/cover;
+
+}
+
+.signup-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.signup-container h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.8); /* Proper label color */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white; 
+  background: transparent; 
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+}
+
+.form-group input:focus {
+  border-color: #FFB74D;
+  outline: none;
+}
+
+.btn {
+  background-color: #FFB74D;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #FF6F61;
+  transform: translateY(-3px);
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 15px;
+  }
+  
+  .btn {
+    font-size: 0.9rem;
+  }
+}
